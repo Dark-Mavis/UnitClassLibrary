@@ -34,8 +34,8 @@ namespace UnitClassLibrary.TimeUnit.TimeTypes
             return "hrs.";
         }
 
-        public override double ConversionFactor => 60;
+        public override double ConversionFactor => 3600;
 
-        public override double DefaultErrorMargin => new Minute().DefaultErrorMargin / ConversionFactor;
+        public override double DefaultErrorMargin => new Second().DefaultErrorMargin / ConversionFactor;
     }
 }
